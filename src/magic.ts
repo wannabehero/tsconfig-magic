@@ -1,3 +1,5 @@
+require('module-alias/register');
+
 import { first } from '@moonpay-test/first';
 import { second } from '@moonpay-test/second';
 

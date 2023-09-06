@@ -14,13 +14,18 @@
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {
-    "@moonpay-test/first": "*",
-    "@moonpay-test/second": "*"
-  },
   "devDependencies": {
     "rimraf": "^5.0.1",
     "ts-node": "10.9.1",
     "typescript": "5.2.2"
+  },
+  "dependencies": {
+    "@moonpay-test/first": "*",
+    "@moonpay-test/second": "*",
+    "module-alias": "^2.2.3"
+  },
+  "_moduleAliases": {
+    "@moonpay-test/first": "dist/packages/first/src",
+    "@moonpay-test/second": "dist/packages/second/src"
   }
 }

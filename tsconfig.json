@@ -6,15 +6,7 @@
     "outDir": "dist",
     "jsx": "react",
     "resolveJsonModule": true,
-    "rootDir": ".",
-    "paths": {
-      "@moonpay-test/first": [
-        "../packages/first/src/index.ts"
-      ],
-      "@moonpay-test/second": [
-        "../packages/second/src/index.ts"
-      ]
-    }
+    "rootDir": "."
   },
   "include": ["src/**/*", "packages/first/**/*", "packages/second/**/*"],
 }

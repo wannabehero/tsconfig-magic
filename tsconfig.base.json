@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "MoonPay TS Config",
+  "compilerOptions": {
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "pretty": true,
+    "lib": [
+      "esnext",
+      "ES2021"
+    ],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "ES2021",
+    "declaration": true,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "strict": true
+  }
+}

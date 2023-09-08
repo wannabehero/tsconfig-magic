@@ -1,4 +1,6 @@
-require('module-alias/register');
+if (process.env.NODE_ENV === 'production') {
+  require('module-alias/register');
+}
 
 import { first } from '@moonpay-test/first';
 import { second } from '@moonpay-test/second';

@@ -8,5 +8,5 @@
     "resolveJsonModule": true,
     "rootDir": "."
   },
-  "include": ["src/**/*", "packages/first/**/*", "packages/second/**/*"],
+  "include": ["src/**/*", "packages/**/*"],
 }

@@ -3,6 +3,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 import { first } from '@moonpay-test/first';
-import { second } from '@moonpay-test/second';
+import { second, render } from '@moonpay-test/second';
 
 console.log(first, second);
+console.log(render);

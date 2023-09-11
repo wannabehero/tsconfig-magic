@@ -28,13 +28,13 @@
   "include": ["src/**/*"],
   "references": [
     {
+      "path": "./packages/first"
+    },
+    {
       "path": "./packages/second"
     },
     {
       "path": "./packages/libs"
     },
-    {
-      "path": "./packages/first"
-    }
   ]
 }

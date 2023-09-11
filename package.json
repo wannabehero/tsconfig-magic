@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "clean": "rimraf dist tsconfig.tsbuildinfo && npm run clean -ws --if-present",
     "build": "npm run clean && tsc -b",
-    "start": "node -r module-alias/register dist/src/magic.js",
-    "magic": "ts-node src/magic.ts",
+    "start": "node dist/src/magic.js",
+    "magic": "ts-node -r tsconfig-paths/register src/magic.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,18 +17,12 @@
   "devDependencies": {
     "rimraf": "^5.0.1",
     "ts-node": "10.9.1",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "tsconfig-paths": "4.2.0"
   },
   "dependencies": {
     "@moonpay-test/first": "*",
     "@moonpay-test/second": "*",
-    "@moonpay-test/libs": "*",
-    "module-alias": "^2.2.3"
-  },
-  "_moduleAliases": {
-    "@moonpay-test/first": "dist/packages/first/src",
-    "@moonpay-test/second": "dist/packages/second/src",
-    "@moonpay-test/libs/logger": "dist/packages/libs/src/logger",
-    "@moonpay-test/libs/types": "dist/packages/libs/src/types"
+    "@moonpay-test/libs": "*"
   }
 }

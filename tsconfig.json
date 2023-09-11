@@ -6,7 +6,35 @@
     "outDir": "dist",
     "jsx": "react",
     "resolveJsonModule": true,
-    "rootDir": "."
+    "rootDir": "src",
+    "paths": {
+      "@moonpay-test/first": [
+        "../packages/first/src/index.ts"
+      ],
+      "@moonpay-test/second": [
+        "../packages/second/src/index.ts"
+      ],
+      "@moonpay-test/libs": [
+        "../packages/libs/src/index.ts"
+      ],
+      "@moonpay-test/libs/logger": [
+        "../packages/libs/src/logger.ts"
+      ],
+      "@moonpay-test/libs/types": [
+        "../packages/libs/src/types.ts"
+      ]
+    }
   },
-  "include": ["src/**/*", "packages/**/*"],
+  "include": ["src/**/*"],
+  "references": [
+    {
+      "path": "./packages/first"
+    },
+    {
+      "path": "./packages/second"
+    },
+    {
+      "path": "./packages/libs"
+    },
+  ]
 }

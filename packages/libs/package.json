@@ -1,0 +1,39 @@
+{
+  "name": "@moonpay-test/libs",
+  "private": true,
+  "description": "Package to host some of the useful libs and tools",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "engines": {
+    "node": "18.*",
+    "npm": "9.*"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
+    },
+    "./types": {
+      "import": "./src/types.ts",
+      "require": "./src/types.ts"
+    },
+    "./logger": {
+      "import": "./src/logger.ts",
+      "require": "./src/logger.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "types": [
+        "src/types.ts"
+      ],
+      "logger": [
+        "src/logger.ts"
+      ]
+    }
+  },
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

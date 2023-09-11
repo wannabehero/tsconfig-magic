@@ -2,8 +2,12 @@ if (process.env.NODE_ENV === 'production') {
   require('module-alias/register');
 }
 
+import { ILogger } from '@moonpay-test/libs/types';
+import { Logger } from '@moonpay-test/libs/logger';
 import { first } from '@moonpay-test/first';
 import { second, render } from '@moonpay-test/second';
 
-console.log(first, second);
-console.log(render);
+const logger: ILogger = new Logger('magic');
+
+logger.log(first, second);
+logger.log(render());

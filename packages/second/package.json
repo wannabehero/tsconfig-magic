@@ -10,6 +10,7 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "dependencies": {
-    "react": "18.2.0"
+    "react": "18.2.0",
+    "@moonpay-test/first": "*"
   }
 }

@@ -22,10 +22,13 @@
   "dependencies": {
     "@moonpay-test/first": "*",
     "@moonpay-test/second": "*",
+    "@moonpay-test/libs": "*",
     "module-alias": "^2.2.3"
   },
   "_moduleAliases": {
     "@moonpay-test/first": "dist/packages/first/src",
-    "@moonpay-test/second": "dist/packages/second/src"
+    "@moonpay-test/second": "dist/packages/second/src",
+    "@moonpay-test/libs/logger": "dist/packages/libs/src/logger",
+    "@moonpay-test/libs/types": "dist/packages/libs/src/types"
   }
 }
